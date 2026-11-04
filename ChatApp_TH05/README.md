@@ -2,7 +2,7 @@
 
 Ứng dụng nhắn tin 1–1 được xây dựng bằng **React Native CLI, TypeScript và Firebase**. Dự án nâng cấp từ giao diện ChatApp ở Bài 4 sang xác thực người dùng, danh bạ, tin nhắn và trạng thái hoạt động theo thời gian thực, đồng thời bổ sung chia sẻ vị trí.
 
-Trong repository, `ChatApp/` lưu phiên bản Bài 4; **`ChatApp_Bai5/` là phiên bản được mô tả trong README này**. Hai phiên bản được lưu ở hai thư mục riêng.
+Trong repository, `ChatApp/` lưu phiên bản Bài 4; **`ChatApp_TH05/` là phiên bản được mô tả trong README này**. Hai phiên bản được lưu ở hai thư mục riêng.
 
 ## Chức năng
 
@@ -32,7 +32,7 @@ Các phiên bản dependency cụ thể được lưu trong [package.json](packa
 
 ## Chuẩn bị môi trường
 
-Hướng dẫn lệnh bên dưới dành cho **Windows PowerShell**, chạy từ thư mục `ChatApp_Bai5`.
+Hướng dẫn lệnh bên dưới dành cho **Windows PowerShell**, chạy từ thư mục `ChatApp_TH05`.
 
 - Node.js **từ 22.11.0** và npm.
 - JDK, Android Studio, Android SDK; cấu hình `JAVA_HOME`, `ANDROID_HOME` và Android SDK Platform Tools trong `PATH`.
@@ -49,11 +49,11 @@ Clone repository nếu chưa có bản trên máy:
 
 ```powershell
 git clone https://github.com/ITHoangLV/Mobileapp_2026.git
-Set-Location .\Mobileapp_2026\ChatApp_Bai5
+Set-Location .\Mobileapp_2026\ChatApp_TH05
 npm.cmd ci
 ```
 
-Nếu đã có repository, mở PowerShell tại `ChatApp_Bai5` rồi chạy `npm.cmd ci`. Dependency, thư mục build và keystore không được đưa lên Git.
+Nếu đã có repository, mở PowerShell tại `ChatApp_TH05` rồi chạy `npm.cmd ci`. Dependency, thư mục build và keystore không được đưa lên Git.
 
 ### Tạo debug keystore cho Android
 
@@ -92,7 +92,7 @@ Mở emulator hoặc kết nối điện thoại, sau đó kiểm tra:
 adb devices
 ```
 
-Mở hai terminal tại `ChatApp_Bai5`.
+Mở hai terminal tại `ChatApp_TH05`.
 
 **Terminal 1 — Metro:**
 
@@ -147,7 +147,7 @@ Test tự động mock Firebase và các native module. Cần thực hiện thê
 ## Cấu trúc mã nguồn
 
 ```text
-ChatApp_Bai5/
+ChatApp_TH05/
 ├── App.tsx                 # Điểm vào và các provider
 ├── android/                # Dự án Android native
 ├── ios/                    # Dự án iOS native

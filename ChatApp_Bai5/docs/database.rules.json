@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "status": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "messages": {
+      "$chatId": {
+        ".read": "auth != null && ($chatId.contains(auth.uid))",
+        ".write": "auth != null && ($chatId.contains(auth.uid))"
+      }
+    },
+    "userChats": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        "$partnerUid": {
+          ".read": "$uid === auth.uid",
+          ".write": "auth != null"
+        }
+      }
+    }
+  }
+}
